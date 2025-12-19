@@ -15,15 +15,12 @@ while True:
 
     if computer == user:
         print("Tie")
-    elif computer == 1 and user == 2:
-        print("User won and computer lost")
-    elif computer == 2 and user == 3:
-        print("User won and computer lost")
-    elif computer == 3 and user == 1:
+   elif (computer == 1 and user == 2) or (computer == 2 and user == 3) or (computer == 3 and user == 1):
         print("User won and computer lost")
     else:
         print("User lost and computer won")
     play_again = input("Play again? (y/n): ").lower()
     if play_again != 'y':
         print("Thanks for playing!")
+
         break
